@@ -1,24 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>772</width>
+    <height>750</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>MainWindow</string>
+  <property name="windowTitle">
+   <string>RESTrepeat V0.1</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_IP">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>目标IP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_port">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>目标端口</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_userName">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户名</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_password">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>30</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>密码</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_IP">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>172.18.30.19</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_port">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>80</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_userName">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>admin</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_password">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>123456</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_package1">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>80</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>POST</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_package1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>包头</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_package1">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>80</y>
+      <width>551</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/merlin/GetListenPort.cgi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_body1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>包体</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_body1">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>130</y>
+      <width>621</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_send1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>220</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_package2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>包头</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_package2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>300</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>POST</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_package2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>300</y>
+      <width>571</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/merlin/GetListenPort.cgi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_body2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>包体</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_body2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>350</y>
+      <width>631</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_send2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>430</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_show">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>500</y>
+      <width>631</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>772</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
