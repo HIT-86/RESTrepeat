@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>772</width>
-    <height>750</height>
+    <width>800</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>RESTrepeat V0.1</string>
+   <string>RESTrepeat V1.0 2秒循环且间隔2秒</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label_IP">
@@ -282,13 +282,49 @@
      </rect>
     </property>
    </widget>
+   <widget class="QToolButton" name="toolButton_cyclicSend">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>700</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>循环发送</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_killSend">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>700</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消循环</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber_count">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>710</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>772</width>
+     <width>800</width>
      <height>23</height>
     </rect>
    </property>
